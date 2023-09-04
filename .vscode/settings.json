@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/seeds/*.json"
+            ],
+            "url": "https://raw.githubusercontent.com/jkomoros/prompt-garden/main/schemas/seed.json"
+        },
+    ]
+}

@@ -4,6 +4,7 @@
         "": {
             "type": "prompt",
             "description": "This is the default seed",
+            "comment": "You can add more seeds, or change this one.",
             "prompt": "Create a limerick about gardens."
         }
     }
