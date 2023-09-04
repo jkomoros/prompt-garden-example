@@ -10,8 +10,10 @@ const env = {
 const main = async () => {
     const profile = new ProfileBrowser();
     const garden = new Garden(env, profile);
-    await garden.ensureSeedPacket('https://raw.githubusercontent.com/jkomoros/prompt-garden/main/seeds/example-import.json');
-    const seed = await garden.seed('favorite-things-limerick');
+    const res = await fetch('./seeds/index.json');
+    const data = await res.json();
+    garden.plantSeedPacket('main', data);
+    const seed = await garden.seed('');
     const result = await seed.grow();
     alert(result);
 };

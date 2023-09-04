@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "seeds": {
+        "": {
+            "type": "prompt",
+            "description": "This is the default seed",
+            "prompt": "Create a limerick about gardens."
+        }
+    }
+}
