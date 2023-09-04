@@ -16,7 +16,9 @@ const main = async () => {
     garden.plantSeedPacket('main', data);
     const seed = await garden.seed('');
     const result = await seed.grow();
-    alert(result);
+    const ele = document.getElementById('output');
+    ele.innerText = result;
+
 };
 
 main();
