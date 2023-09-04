@@ -1,0 +1,19 @@
+{
+	"name": "prompt-garden-example",
+	"version": "0.0.1",
+	"description": "An example of using prompt-garden as a library in another webapp",
+	"main": "src/index.js",
+	"scripts": {
+		"serve": "wds --node-resolve --port=8082"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jkomoros/prompt-garden-example.git"
+	},
+	"devDependencies": {
+		"@web/dev-server": "^0.3.1"
+	},
+	"dependencies": {
+		"prompt-garden": "^0.0.4"
+	}
+}
