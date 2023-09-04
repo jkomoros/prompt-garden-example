@@ -3,11 +3,12 @@ import {
     ProfileBrowser,
 } from 'prompt-garden';
 
-const env = {
-    openai_api_key: 'YOUR_API_KEY_HERE'
-};
+import { 
+    getEnvironment
+} from './environment.js';
 
 const main = async () => {
+    const env = await getEnvironment();
     const profile = new ProfileBrowser();
     const garden = new Garden(env, profile);
     const res = await fetch('./seeds/index.json');
